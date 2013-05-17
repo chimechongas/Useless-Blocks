@@ -2,13 +2,8 @@ package net.minecraft.src;
 
 public enum EnumToolMod
 {
-    WOOD(0, 59, 2.0F, 0, 15),
-    STONE(1, 131, 4.0F, 1, 5),
-    IRON(2, 250, 6.0F, 2, 14),
-    EMERALD(3, 1561, 8.0F, 3, 10),
-    GOLD(0, 32, 12.0F, 0, 22);
-    GREENEMERALD()
-    OBSIDIAN()
+    GREENEMERALD(4, 1200, 9.0F, 4, 9)
+    OBSIDIAN(3, 2500, 7.0F, 4, 9)
 
     /**
      * The level of material this tool can harvest (3 = DIAMOND, 2 = IRON, 1 = STONE, 0 = IRON/GOLD)
@@ -86,6 +81,6 @@ public enum EnumToolMod
      */
     public int getToolCraftingMaterial()
     {
-        return this == WOOD ? Block.planks.blockID : (this == STONE ? Block.cobblestone.blockID : (this == GOLD ? Item.ingotGold.itemID : (this == IRON ? Item.ingotIron.itemID : (this == EMERALD ? Item.diamond.itemID : 0))));
+        return this == OBSIDIAN ? Block.obsidian.blockID : (this == GREENEMERALD ? Item.emerald.itemID );
     }
 }

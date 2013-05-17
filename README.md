@@ -1,7 +1,7 @@
 Useless-Blocks
 ==============
 
-An upcoming mod for tools for useless blocks.
+An upcoming mod that gives use to Useless Blocks.
 List of new things added:
 -Obsidian tools 
 -Emerald tools 
